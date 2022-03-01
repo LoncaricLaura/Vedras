@@ -1,25 +1,24 @@
 <template>
-    <div class="user">Users</div>
+    <div class="user p-[30px] text-[32px] text-[#5C5C5C]-700">Users</div>
+    <Card v-for="user in users" :key="user.id" :info="user.id" :name="user.firstName" :surname="user.lastName" :picture="user.picture" :title="user.title" />
 
-    <Card v-for="user in users" :key="user.id" :info="user.id" :name="user.firstName" :surname="user.lastName" :picture="user.picture" />
 </template>
 
 <script>
 import Card from './Card.vue'
+import About from './About.vue'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
 
 export default {
     name: "UsersList",
     data() {
         return {
             users: [],
-            picture: [],
-            cards: [],
         };
     },
     components: {
         Card,
+        About,
     },
     mounted() {
         const headers = {'app-id': "6217cefad72c06f27bddcdd6"}
@@ -28,6 +27,8 @@ export default {
             console.log(response.data);
         })
     },
+
+
  /*   methods: {
         async getData() {
             try {

@@ -17,7 +17,7 @@ import Home from './components/Home.vue'
                 class="flex sm:flex-initial flex-row-reverse relative md:mr-[190px] pt-[30px] pb-[20px]"
                 id="nav"
             >
-                <a href="/en" class="w-32 hover:underline"><b>EN</b></a>
+                <a href="" class="w-32 hover:underline"><b>EN</b></a>
                 <router-link to='/UsersList' class="hover:underline">Users</router-link>
                 <a href="tel:385989608920" class="pr-[10px] hover:underline">
                     +385 98 9608 920

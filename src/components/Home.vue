@@ -8,7 +8,7 @@ import UsersList from './UsersList.vue'
    
 
     <section
-        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:flex px-[30px] py-[30px] sm:px-[70px] sm:py-[80px] md:px-[90px] md:py-[80px] lg:px-[240px]"
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[30px] py-[30px] sm:px-[70px] sm:py-[80px] md:px-[90px] md:py-[80px] lg:px-[240px]"
         id="uvd-robots"
     >
         <div class="w-full">
