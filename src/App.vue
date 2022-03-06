@@ -4,10 +4,11 @@
 import UsersList from './components/UsersList.vue'
 import Home from './components/Home.vue'
 
+
 </script>
 
 <template>
-<div id="app">
+<div id="app" data-aos="new-animation" data-aos-offset="200" data-aos-easing="ease-in-out">
      <section class="flex" id="header">
         <div
             class="flex-1 w-full h-[347px] bg-[url('src/assets/Group-6.jpg')] bg-cover"
@@ -32,7 +33,7 @@ import Home from './components/Home.vue'
             </div>
            <router-link to="/"><img class="mx-auto" id="img" src="./assets/Group-4.svg" /></router-link>
             <hr class="mx-auto my-[30px]" id="line" />
-            <p class="text-4xl font-bold pb-[15px]">ON HOLD</p>
+            <p class="text-4xl font-bold pb-[15px] animate-fade-in-down">ON HOLD</p>
             <div class="flex justify-center space-x-[15px]">
                 <a
                     href="https://www.instagram.com/vedrasgroup/?hl=en"

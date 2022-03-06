@@ -5,13 +5,11 @@ import UsersList from './UsersList.vue'
 </script>
 
 <template>
-   
-
     <section
-        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[30px] py-[30px] sm:px-[70px] sm:py-[80px] md:px-[90px] md:py-[80px] lg:px-[240px]"
-        id="uvd-robots"
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-[30px] py-[30px] sm:px-[70px] sm:py-[80px] md:px-[100px] md:py-[80px] lg:px-[100px] xl:px-[240px]"
+        id="uvd-robots"   
     >
-        <div class="w-full">
+        <div class="w-full animate-fade-in-down" >
             <p
                 class="text-left text-[#5c5c5c] tracking-[-0.29px] pb-[30px]"
                 id="paragraf1"
@@ -35,14 +33,14 @@ import UsersList from './UsersList.vue'
                 autonomnog UV-dezinfekcijskog robota tvrtke Blue Ocean Robotics.
             </p>
         </div>
-        <div class="w-full translate-x-[100px] my-[30px]">
+        <div class="w-full translate-x-[100px] my-[30px] md:translate-x-0 animate-fade-in-up">
             <img
                 src="../assets/kill-stroj.png"
                 class="md:-mt-[50px] mb-[30px] sm:mb-[30px]"
                 id="kill-stroj"
             />
             <div
-                class="flex items-center h-[176px] w-[336px] bg-[#027fc1] -mt-[100px] lg:-mt-[150px] ml-[30px] px-[30px]"
+                class="flex items-center h-[176px] w-[336px] bg-[#027fc1] -mt-[100px] lg:-mt-[150px] ml-[30px] px-[30px]" id="uvdRobots"
             >
                 <p
                     class="text-left text-white text-[24px] font-bold tracking-[-.43px] leading-[36px]"
@@ -55,8 +53,8 @@ import UsersList from './UsersList.vue'
 
     <section>
         <div
-            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:flex items-center justify-between bg-[#027fc1] px-[30px] sm:px-[70px] md:pl-[90px] lg:pl-[240px] md:pr-[80px] py-[80px] w-full"
-        >
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:flex items-center justify-between bg-[#027fc1] px-[30px] sm:px-[70px] md:pl-[90px] lg:pl-[240px] md:pr-[80px] py-[80px] w-full "
+>
             <div class="basis-1/2 lg:pr-[80px]">
                 <p
                     class="text-left text-white text-[36px] font-bold leading-[48px] pb-[30px]"
@@ -100,7 +98,9 @@ import UsersList from './UsersList.vue'
             </div>
             <div
                 class="flex flex-wrap bg-[url('src/assets/offer.png')] bg-cover h-[36.2vh] w-full lg:h-[574px] lg:w-[42.96vw] mt-[50px] md:mt-[50px]"
-                id="offer"
+                data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" 
+                id="offer" 
+
             ></div>
         </div>
     </section>
@@ -112,11 +112,12 @@ import UsersList from './UsersList.vue'
             <div
                 class="bg-[url('src/assets/covid-free.jpg')] bg-cover w-full h-[42.96vh] lg:h-[464px] lg:w-[695px] min-h-[300px] order-last lg:order-first"
                 id="covid"
+                data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" 
             ></div>
-
             <div
                 class="flex flex-col justify-center w-full mb-[50px] lg:h-[464px] lg:w-[695px] px-[80px] py-[50px] lg:ml-[10px]"
                 id="covidfree"
+                data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" 
             >
                 <p
                     class="text-left text-[#5c5c5c] text-[36px] font-bold leading-[48px] tracking-[-.64px]"
@@ -144,11 +145,13 @@ import UsersList from './UsersList.vue'
     <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:flex">
         <div
             class="bg-[url('src/assets/Group-7.jpg')] bg-cover h-[55vh] md:h-[631px] w-full"
+
             id="Group7"
         ></div>
 
         <div
             class="flex items-center bg-[#027fc1] py-[50px] px-[50px] md:px-[100px] lg:py-[100px] lg:px-[100px] w-full order-first lg:order-last"
+            
         >
             <p
                 class="text-left text-white text-[25px] md:text-[36px] font-bold leading-[32px] md:leading-[55px] tracking-[-.64px]"
@@ -166,6 +169,7 @@ import UsersList from './UsersList.vue'
         >
             <div
                 class="w-full px-[20px] lg:h-[64.26vh] lg:w-[39vw] shadow-[0_2px_32px_0_rgba(0,0,0,14%)] py-[40px] mb-[50px] sm:px-[50px] lg:py-[0px] xl:py-[120px]"
+                data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" 
             >
                 <p
                     class="text-left text-[#5c5c5c] text-[25px] leading-[32px] md:text-[36px] font-bold sm:leading-[50px] tracking-[-.64px]"
@@ -200,21 +204,22 @@ import UsersList from './UsersList.vue'
             <div
                 class="w-full bg-[url('src/assets/91448396.jpg')] bg-cover h-[64.26vh] sm:w-[50%] sm:mx-auto lg:w-[30.21vw] bg-y-[80%]"
                 id="robot"
+                data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" 
             ></div>
         </div>
     </section>
 
     <section
-        class="grid grid-rows-1 sm:grid-rows-1 md:grid-cols-1 lg:grid-cols justify-center bg-[#027fc1] px-[20px] py-[40px] sm:py-[120px]"
+        class="grid grid-rows-1 sm:grid-rows-1 md:grid-cols-1 lg:grid-cols justify-center bg-[#027fc1] px-[20px] py-[40px] sm:py-[120px]" 
     >
-        <div>
+        <div data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500"  >
             <p
                 class="text-center text-white text-[25px] md:text-[36px] leading-[32px] sm:leading-[48px] tracking-[-.29px]"
             >
                 Za više informacija pišite nam na mail:
             </p>
         </div>
-        <div class="lg:flex justify-center">
+        <div class="lg:flex justify-center" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-out" data-aos-duration="1500" >
             <a href="mailto:info@vedras.hr">
                 <p
                     class="text-center text-white font-bold text-[25px] md:text-[36px] leading-[32px] md:leading-[48px] tracking-[-.29px] hover:underline"
@@ -241,6 +246,8 @@ import UsersList from './UsersList.vue'
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+
 
 #app {
     font-family: 'Titillium Web', sans-serif;
